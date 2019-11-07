@@ -10,5 +10,6 @@
 #include "usb_lib.h"
 #include "usb_pwr.h"
 #include "adc.h"
+#include "timer.h"
 
 #endif

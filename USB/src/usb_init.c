@@ -1,11 +1,6 @@
 
-/* Includes ------------------------------------------------------------------*/
 #include "usb_lib.h"
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
 /*  The number of current endpoint, it will be used to specify an endpoint */
  uint8_t	EPindex;
 /*  The number of current device, it is an index to the Device_Table */
@@ -24,10 +19,6 @@ uint16_t	SaveState ;
 uint16_t  wInterrupt_Mask;
 DEVICE_INFO	Device_Info;
 USER_STANDARD_REQUESTS  *pUser_Standard_Requests;
-
-/* Extern variables ----------------------------------------------------------*/
-/* Private function prototypes -----------------------------------------------*/
-/* Private functions ---------------------------------------------------------*/
 
 /**
   * Function Name  : USB_Init

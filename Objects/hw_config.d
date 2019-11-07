@@ -20,3 +20,6 @@
 .\objects\hw_config.o: .\Code\inc\usb_pwr.h
 .\objects\hw_config.o: .\Code\inc\usb_istr.h
 .\objects\hw_config.o: .\Code\inc\usb_prop.h
+.\objects\hw_config.o: .\Code\inc\adc.h
+.\objects\hw_config.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\hw_config.o: .\Code\inc\usart.h

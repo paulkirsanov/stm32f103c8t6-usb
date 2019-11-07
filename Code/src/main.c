@@ -15,21 +15,21 @@ int main(void)
 	
 	delay_tim1_init();
 	led_init();
-	adc1_init();
+	usart1_init();
+	adc1_init_dma();
 	touchpad_init();
+	timer2_init();
   
   while (1)
   {
-    if (bDeviceState == CONFIGURED)
+    if(bDeviceState == CONFIGURED)
     {
-      if ((TouchPadState() != 0) && (PrevXferComplete))
+      /*if((TouchPadState() != 0) && (PrevXferComplete))
       {
         TouchPad_Send(TouchPadState());
-      }
-			
-			GPIOC->ODR ^= GPIO_ODR_ODR13;
-			delay_ms(1000);
-    } 
+      }*/
+			TouchPadState();
+    }
   }
 }
 
@@ -58,4 +58,14 @@ void rcc_init(void)
 	RCC->CFGR &= ~RCC_CFGR_SW;																	//clear SW bits
 	RCC->CFGR |= RCC_CFGR_SW_PLL;																//select surce SYSCLK = PLL
 	while((RCC->CFGR & RCC_CFGR_SWS) != RCC_CFGR_SWS_1){}				//wait till PLL is used
+}
+
+void TIM2_IRQHandler(void)
+{
+	if(TIM2->SR & TIM_SR_UIF)
+	{
+		TIM2->SR &= ~TIM_SR_UIF;
+		
+		GPIOC->ODR ^= GPIO_ODR_ODR13;
+	}
 }

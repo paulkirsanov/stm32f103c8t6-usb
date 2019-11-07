@@ -24,3 +24,6 @@
 .\objects\main.o: .\Code\inc\usb_istr.h
 .\objects\main.o: .\Code\inc\usb_prop.h
 .\objects\main.o: .\Code\inc\adc.h
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: .\Code\inc\usart.h
+.\objects\main.o: .\Code\inc\timer.h

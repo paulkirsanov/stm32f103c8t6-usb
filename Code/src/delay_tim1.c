@@ -25,8 +25,8 @@ void delay_ms(uint32_t value)
 
 void delay_tim1_init(void)
 {
-	prescaler_ms = SystemCoreClock / 1000;
-	prescaler_us = SystemCoreClock / 1000000;
+	prescaler_ms = 35999000 / 1000;
+	prescaler_us = 35999000 / 1000000;
 	
 	RCC->APB2ENR |= RCC_APB2ENR_TIM1EN;
 }

@@ -1,15 +1,25 @@
 
 #include "hw_config.h"
+#include "adc.h"
+
+signed int  value_x = 0;
+signed int  value_y = 0;
+
+//static signed int previousX = 0;
+//static signed int previousY = 0;
+
+char str1[13] = {0};
+
+bool update = FALSE;
 
 ErrorStatus HSEStartUpStatus;
-
-static uint8_t state_right = 0;
 
 /* Extern variables ----------------------------------------------------------*/
 extern __IO uint8_t PrevXferComplete;
 
 /* Private function prototypes -----------------------------------------------*/
 static void IntToUnicode (uint32_t value , uint8_t *pbuf , uint8_t len);
+float convert(float value, float From1, float From2, float To1, float To2);
 //static void Delay(__IO uint32_t nTime);
 
 void Set_System(void)
@@ -64,14 +74,6 @@ void Leave_LowPowerMode(void)
   */
 void USB_Interrupts_Config(void)
 {
-  /* 2 bit for pre-emption priority, 2 bits for subpriority */
-//  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
-  
-  /* Enable the USB interrupt */
-
-//  NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority = 5;
-//  NVIC_InitStructure.NVIC_IRQChannelSubPriority = 0;
-	
 	NVIC_EnableIRQ(USB_LP_CAN1_RX0_IRQn);
 	NVIC_SetPriority(USB_LP_CAN1_RX0_IRQn, 0);
 }
@@ -84,21 +86,59 @@ void USB_Cable_Config (FunctionalState NewState)
 		GPIOC->BSRR = GPIO_BSRR_BS13;
 }
 
-uint8_t TouchPadState(void)
+void TouchPadState(void)
 {
-	if(state_right != 5)
+	update = FALSE;
+	int8_t TouchPad_Buffer[4] = {0, 0, 0, 0};
+	
+	GPIOA->BSRR = GPIO_BSRR_BS2;
+	GPIOA->BSRR = GPIO_BSRR_BS3;
+	
+	GPIOA->BRR = GPIO_BRR_BR4;
+	GPIOA->BRR = GPIO_BRR_BR5;
+	
+	value_x = convert(((float)print_value_ADC())*3/4096, 0.55, 0.8, -127.0, 127.0);
+	
+	if(value_x < 200)
 	{
-		state_right++;
-		return RIGHT;
+		GPIOA->BSRR = GPIO_BSRR_BS2;
+		GPIOA->BSRR = GPIO_BSRR_BS4;
+	
+		GPIOA->BRR = GPIO_BRR_BR3;
+		GPIOA->BRR = GPIO_BRR_BR5;
+		
+		value_y = convert(((float)print_value_ADC())*3/4096, 0.55, 0.8, -127.0, 127.0);
+		
+		if(value_x < -THRESHOLD){
+			TouchPad_Buffer[2] = -CURSOR_STEP;
+		}else if(value_x > THRESHOLD){
+			TouchPad_Buffer[2] = CURSOR_STEP;
+		}else{
+			TouchPad_Buffer[2] = 0;
+		}
+		
+		if(value_y < -THRESHOLD){
+			TouchPad_Buffer[1] = -CURSOR_STEP;
+		}else if(value_y > THRESHOLD){
+			TouchPad_Buffer[1] = CURSOR_STEP;
+		}else{
+			TouchPad_Buffer[1] = 0;
+		}
+		
+		/*if(TouchPad_Buffer[1] == 0 && TouchPad_Buffer[2] == 0)
+		{
+			TouchPad_Buffer[0] = 1;
+		}*/
+		
+		PrevXferComplete = 0;
+		USB_SIL_Write(EP1_IN, (uint8_t *) TouchPad_Buffer, 4);
+		SetEPTxValid(ENDP1);
 	}
-	else state_right = 0;
-
-	return 0;
 }
 
 void TouchPad_Send(uint8_t Keys)
 {
-  uint8_t Mouse_Buffer[4] = {0, 0, 0, 0};
+  /*uint8_t TouchPad_Buffer[4] = {0, 0, 0, 0};
   int8_t X = 0, Y = 0;
   
 	switch (Keys)
@@ -106,34 +146,35 @@ void TouchPad_Send(uint8_t Keys)
 		case LEFT:
 			X -= CURSOR_STEP;
 			break;
-
+		
 		case RIGHT:
 			X += CURSOR_STEP;
 			break;
-
+		
 		case UP:
 			Y -= CURSOR_STEP;
 			break;
-
+		
 		case DOWN:
 			Y += CURSOR_STEP;
 			break;
-
+		
 		default:
 			return;
-  }
-  /* prepare buffer to send */
-	Mouse_Buffer[1] = X;
-	Mouse_Buffer[2] = Y;
-  
-  /* Reset the control token to inform upper layer that a transfer is ongoing */
-  PrevXferComplete = 0;
-  
-  /* Copy mouse position info in ENDP1 Tx Packet Memory Area*/
-  USB_SIL_Write(EP1_IN, Mouse_Buffer, 4);
-  
-  /* Enable endpoint for transmission */
-  SetEPTxValid(ENDP1);
+  }*/
+	
+	/* prepare buffer to send */
+//	TouchPad_Buffer[1] = Y;
+//	TouchPad_Buffer[2] = X;
+	
+	/* Reset the control token to inform upper layer that a transfer is ongoing */
+//	PrevXferComplete = 0;
+	
+	/* Copy mouse position info in ENDP1 Tx Packet Memory Area*/
+//	USB_SIL_Write(EP1_IN, TouchPad_Buffer, 4);
+	
+	/* Enable endpoint for transmission */
+//	SetEPTxValid(ENDP1);
 }
 
 /**
@@ -196,4 +237,9 @@ static void IntToUnicode (uint32_t value , uint8_t *pbuf , uint8_t len)
     
     pbuf[ 2* idx + 1] = 0;
   }
+}
+
+float convert(float value, float From1, float From2, float To1, float To2)
+{
+	return (value - From1) / (From2 - From1) * (To2 - To1) + To1;
 }

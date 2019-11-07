@@ -1,20 +1,11 @@
 
-/* Includes ------------------------------------------------------------------*/
 #include "usb_lib.h"
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
 __IO uint16_t SaveRState;
 __IO uint16_t SaveTState;
 
-/* Extern variables ----------------------------------------------------------*/
 extern void (*pEpInt_IN[7])(void);    /*  Handles IN  interrupts   */
 extern void (*pEpInt_OUT[7])(void);   /*  Handles OUT interrupts   */
-
-/* Private function prototypes -----------------------------------------------*/
-/* Private functions ---------------------------------------------------------*/
 
 /**
 * Function Name  : CTR_LP.

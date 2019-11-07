@@ -1,17 +1,17 @@
 Dependencies for Project 'Project 14', Target 'Project 14': (DO NOT MODIFY !)
-F (.\Code\src\main.c)(0x5DA5B6AD)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\Code\inc\main.h)(0x5DA5800C)
+F (.\Code\src\main.c)(0x5DC3BD6A)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Code\inc\main.h)(0x5DA97A2F)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\Code\inc\led.h)(0x5CEE500A)
 I (.\Code\inc\delay_tim1.h)(0x5D429564)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
 I (.\USB\inc\usb_regs.h)(0x5DA46946)
 I (.\USB\inc\usb_def.h)(0x5943A15B)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
@@ -19,13 +19,16 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
 I (.\Code\inc\usb_prop.h)(0x5DA4601B)
-I (.\Code\inc\adc.h)(0x5D8E08D9)
-F (.\Code\src\hw_config.c)(0x5DA591EC)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\hw_config.o --omf_browse .\objects\hw_config.crf --depend .\objects\hw_config.d)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+I (.\Code\inc\adc.h)(0x5DBD4D21)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEBC032)
+I (.\Code\inc\usart.h)(0x5D528146)
+I (.\Code\inc\timer.h)(0x5D57ED7D)
+F (.\Code\src\hw_config.c)(0x5DC3D1AC)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\hw_config.o --omf_browse .\objects\hw_config.crf --depend .\objects\hw_config.d)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -33,7 +36,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
 I (.\USB\inc\usb_regs.h)(0x5DA46946)
 I (.\USB\inc\usb_def.h)(0x5943A15B)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
@@ -41,13 +44,16 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
 I (.\Code\inc\usb_prop.h)(0x5DA4601B)
-F (.\Code\src\stm32_it.c)(0x5DA58B4A)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\stm32_it.o --omf_browse .\objects\stm32_it.crf --depend .\objects\stm32_it.d)
+I (.\Code\inc\adc.h)(0x5DBD4D21)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEBC032)
+I (.\Code\inc\usart.h)(0x5D528146)
+F (.\Code\src\stm32_it.c)(0x5DA98925)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\stm32_it.o --omf_browse .\objects\stm32_it.crf --depend .\objects\stm32_it.d)
 I (.\Code\inc\stm32_it.h)(0x5DA59231)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -55,7 +61,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
 I (.\USB\inc\usb_regs.h)(0x5DA46946)
 I (.\USB\inc\usb_def.h)(0x5943A15B)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
@@ -63,14 +69,14 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
 I (.\Code\inc\usb_prop.h)(0x5DA4601B)
-F (.\Code\src\usb_desc.c)(0x5DA59587)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_desc.o --omf_browse .\objects\usb_desc.crf --depend .\objects\usb_desc.d)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+F (.\Code\src\usb_desc.c)(0x5DA98975)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_desc.o --omf_browse .\objects\usb_desc.crf --depend .\objects\usb_desc.d)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -88,8 +94,8 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-F (.\Code\src\usb_endp.c)(0x5DA479A2)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_endp.o --omf_browse .\objects\usb_endp.crf --depend .\objects\usb_endp.d)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+F (.\Code\src\usb_endp.c)(0x5DA98969)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_endp.o --omf_browse .\objects\usb_endp.crf --depend .\objects\usb_endp.d)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -97,7 +103,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
 I (.\USB\inc\usb_regs.h)(0x5DA46946)
 I (.\USB\inc\usb_def.h)(0x5943A15B)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
@@ -105,22 +111,22 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
 I (.\Code\inc\usb_prop.h)(0x5DA4601B)
-F (.\Code\src\usb_istr.c)(0x5DA46976)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_istr.o --omf_browse .\objects\usb_istr.crf --depend .\objects\usb_istr.d)
+F (.\Code\src\usb_istr.c)(0x5DA98922)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_istr.o --omf_browse .\objects\usb_istr.crf --depend .\objects\usb_istr.d)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
 I (.\USB\inc\usb_regs.h)(0x5DA46946)
@@ -132,8 +138,8 @@ I (.\USB\inc\usb_int.h)(0x5943A15B)
 I (.\Code\inc\usb_prop.h)(0x5DA4601B)
 F (.\Code\src\usb_prop.c)(0x5DA46894)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_prop.o --omf_browse .\objects\usb_prop.crf --depend .\objects\usb_prop.d)
 I (.\Code\inc\usb_prop.h)(0x5DA4601B)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -141,7 +147,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
@@ -152,8 +158,8 @@ I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
 F (.\Code\src\usb_pwr.c)(0x5DA47985)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_pwr.o --omf_browse .\objects\usb_pwr.crf --depend .\objects\usb_pwr.d)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -161,7 +167,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
@@ -172,13 +178,15 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-F (.\Code\src\adc.c)(0x5DA57D44)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
-I (.\Code\inc\adc.h)(0x5D8E08D9)
+F (.\Code\src\adc.c)(0x5DBD4F13)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
+I (.\Code\inc\adc.h)(0x5DBD4D21)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
-F (.\Code\src\delay_tim1.c)(0x5D4295A1)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\delay_tim1.o --omf_browse .\objects\delay_tim1.crf --depend .\objects\delay_tim1.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEBC032)
+I (.\Code\inc\usart.h)(0x5D528146)
+F (.\Code\src\delay_tim1.c)(0x5DA979CE)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\delay_tim1.o --omf_browse .\objects\delay_tim1.crf --depend .\objects\delay_tim1.d)
 I (.\Code\inc\delay_tim1.h)(0x5D429564)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -186,6 +194,18 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 F (.\Code\src\led.c)(0x5D57E373)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
 I (.\Code\inc\led.h)(0x5CEE500A)
+I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
+I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
+I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
+F (.\Code\src\timer.c)(0x5DA97A92)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (.\Code\inc\timer.h)(0x5D57ED7D)
+I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
+I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
+I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
+F (.\Code\src\usart.c)(0x5D528141)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (.\Code\inc\usart.h)(0x5D528146)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
@@ -199,8 +219,8 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 F (.\Startup\startup_stm32f10x_md.s)(0x4D787512)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 528" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
 F (.\USB\src\usb_core.c)(0x5DA57C7A)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_core.o --omf_browse .\objects\usb_core.crf --depend .\objects\usb_core.d)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -208,7 +228,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
@@ -219,9 +239,9 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-F (.\USB\src\usb_init.c)(0x5DA45D24)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_init.o --omf_browse .\objects\usb_init.crf --depend .\objects\usb_init.d)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+F (.\USB\src\usb_init.c)(0x5DA99BA5)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_init.o --omf_browse .\objects\usb_init.crf --depend .\objects\usb_init.d)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -229,7 +249,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
@@ -240,9 +260,9 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-F (.\USB\src\usb_int.c)(0x5DA57C67)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_int.o --omf_browse .\objects\usb_int.crf --depend .\objects\usb_int.d)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+F (.\USB\src\usb_int.c)(0x5DA99BB6)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_int.o --omf_browse .\objects\usb_int.crf --depend .\objects\usb_int.d)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -250,7 +270,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
@@ -261,9 +281,9 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-F (.\USB\src\usb_mem.c)(0x5DA57C5C)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_mem.o --omf_browse .\objects\usb_mem.crf --depend .\objects\usb_mem.d)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+F (.\USB\src\usb_mem.c)(0x5DA985B6)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_mem.o --omf_browse .\objects\usb_mem.crf --depend .\objects\usb_mem.d)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -271,7 +291,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
@@ -282,9 +302,9 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-F (.\USB\src\usb_regs.c)(0x5DA57C4E)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_regs.o --omf_browse .\objects\usb_regs.crf --depend .\objects\usb_regs.d)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+F (.\USB\src\usb_regs.c)(0x5DA985EF)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_regs.o --omf_browse .\objects\usb_regs.crf --depend .\objects\usb_regs.d)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -292,7 +312,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
@@ -303,9 +323,9 @@ I (.\USB\inc\usb_init.h)(0x5943A15B)
 I (.\USB\inc\usb_sil.h)(0x5943A15B)
 I (.\USB\inc\usb_mem.h)(0x5943A15B)
 I (.\USB\inc\usb_int.h)(0x5943A15B)
-F (.\USB\src\usb_sil.c)(0x5DA57C32)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_sil.o --omf_browse .\objects\usb_sil.crf --depend .\objects\usb_sil.d)
-I (.\USB\inc\usb_lib.h)(0x5DA4699B)
-I (.\Code\inc\hw_config.h)(0x5DA57DFC)
+F (.\USB\src\usb_sil.c)(0x5DA985CF)(--c99 --gnu -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I .\Code\inc -I .\CMSIS\inc -I .\USB\inc-I.\RTE\_Project_14-IC:\Users\Pavel_K\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="528" -DSTM32F10X_MD-o .\objects\usb_sil.o --omf_browse .\objects\usb_sil.crf --depend .\objects\usb_sil.d)
+I (.\USB\inc\usb_lib.h)(0x5DA985FC)
+I (.\Code\inc\hw_config.h)(0x5DC3BE2D)
 I (.\Code\inc\platform_config.h)(0x5DA582AA)
 I (.\CMSIS\inc\stm32f10x.h)(0x5858CDFB)
 I (.\CMSIS\inc\core_cm3.h)(0x4D527398)
@@ -313,7 +333,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEBC032)
 I (.\CMSIS\inc\system_stm32f10x.h)(0x4D7874EA)
 I (.\USB\inc\usb_type.h)(0x5943A15B)
 I (.\Code\inc\usb_conf.h)(0x5943A15B)
-I (.\Code\inc\usb_desc.h)(0x5DA4683E)
+I (.\Code\inc\usb_desc.h)(0x5DA9994F)
 I (.\Code\inc\usb_pwr.h)(0x5DA57E28)
 I (.\USB\inc\usb_core.h)(0x5DA45D47)
 I (.\Code\inc\usb_istr.h)(0x5943A15B)
